@@ -29,7 +29,7 @@ export default function Services() {
       </h2>
 
       <p className="text-gray-500 max-w-2xl mx-auto mb-10">
-        I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.
+        I am a Full stack developer from Andhra pradesh, India with  experience in multiple Projects.
       </p>
 
       <div className="grid md:grid-cols-4 gap-6">

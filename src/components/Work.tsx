@@ -1,33 +1,39 @@
+"use client";
+
 import { motion } from "framer-motion";
+import p1 from '../assets/project1.png'
+import p2 from '../assets/project2.png'
+import p4 from '../assets/project4.jpeg'
+import p3 from '../assets/p3.png'
 
 const projects = [
   {
-    title: "Portfolio Website",
-    desc: "Modern portfolio built with React, Tailwind and animations.",
-    img: "/p1.jpg",
-    live: "https://your-live-demo.com",
-    github: "https://github.com/your-repo",
+    title: "FlowTrack",
+    desc: "A web application that helps users efficiently track, manage, and optimize their daily tasks and workflows.",
+    img: p1,
+    live: "https://flowtrack-fawn.vercel.app/",
+    github: "https://github.com/Jagadeeshkondaka/Flowtrack",
   },
   {
-    title: "E-Commerce App",
-    desc: "Full stack shopping app with authentication and payment.",
-    img: "/p2.jpg",
-    live: "https://your-live-demo.com",
-    github: "https://github.com/your-repo",
+    title: "PrepAI",
+    desc: "An AI-powered platform designed to assist users in preparing for interviews through personalized questions and smart feedback.",
+    img: p2,
+    live: "https://prep-ai-morz-q65gb77u9-jagadeeshs-projects-d87bdb57.vercel.app/",
+    github: "https://github.com/Jagadeeshkondaka/PREP-AI",
   },
   {
-    title: "Chat Application",
-    desc: "Real-time chat system using WebSockets and Node.js.",
-    img: "/p3.jpg",
+    title: "DataVerse",
+    desc: "A data-driven application that enables users to explore, visualize, and manage datasets with interactive insights.",
+    img: p3,
     live: "https://your-live-demo.com",
-    github: "https://github.com/your-repo",
+    github: "https://github.com/Jagadeeshkondaka/Dataverse",
   },
   {
-    title: "Task Manager",
-    desc: "Task management app with CRUD operations and API.",
-    img: "/p4.jpg",
+    title: "TravelNote",
+    desc: "Travel Note is a full-stack application that enables users to create, organize, and manage their travel experiences efficiently.",
+    img: p4,
     live: "https://your-live-demo.com",
-    github: "https://github.com/your-repo",
+    github: "https://github.com/Jagadeeshkondaka/Travel-Note",
   },
 ];
 
@@ -35,13 +41,11 @@ export default function Work() {
   return (
     <section id="work" className="py-20 px-6 md:px-16 text-center">
 
-      {/* Heading */}
       <p className="text-gray-500">My portfolio</p>
       <h2 className="text-4xl md:text-5xl font-serif mb-10">
         My latest Projects
       </h2>
 
-      {/* Grid */}
       <div className="grid md:grid-cols-4 gap-6">
 
         {projects.map((p, i) => (
@@ -51,46 +55,44 @@ export default function Work() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.2 }}
-            className="group"
+            className="border rounded-xl p-4 bg-white dark:bg-white/5 backdrop-blur flex flex-col"
           >
 
-            {/* CARD */}
-            <div className="relative">
+            {/* Image */}
+            <img
+              src={p.img}
+              alt={p.title}
+              className="rounded-lg w-full h-52 object-contain bg-gray-100"
+            />
 
-              <img
-                src={p.img}
-                className="rounded-xl w-full h-60 object-cover"
-              />
-
-              {/* Overlay Content (same UI style) */}
-              <div className="absolute bottom-3 left-3 right-3 bg-white dark:bg-black p-3 rounded-lg flex justify-between items-center">
-
-                <div className="text-left">
-                  <p className="font-semibold">{p.title}</p>
-                  <p className="text-xs text-gray-500">
-                    {p.desc}
-                  </p>
-                </div>
-
-                {/* Arrow → Live Demo */}
-                <button
-                  onClick={() => window.open(p.live, "_blank")}
-                  className="text-lg hover:scale-125 transition"
-                >
-                  ↗
-                </button>
-
-              </div>
+            {/* Content BELOW image */}
+            <div className="mt-4 text-left flex-grow">
+              <h3 className="font-semibold text-lg">{p.title}</h3>
+              <p className="text-sm text-gray-500 mt-2">
+                {p.desc}
+              </p>
             </div>
 
-            {/* SOURCE CODE BUTTON */}
-            <div className="mt-3">
+            {/* Buttons */}
+            <div className="flex justify-between items-center mt-4">
+
+              {/* Live Demo Arrow */}
+              
+
+              {/* Source Code */}
               <button
                 onClick={() => window.open(p.github, "_blank")}
                 className="text-sm px-4 py-2 border rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition"
               >
                 Source Code
               </button>
+              <button
+                onClick={() => window.open(p.live, "_blank")}
+                className="text-2xl hover:scale-125 transition"
+              >
+                ↗
+              </button>
+
             </div>
 
           </motion.div>

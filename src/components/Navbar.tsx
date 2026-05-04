@@ -34,7 +34,7 @@ export default function Navbar() {
         <a href="#contact">Contact</a>
       </div>
 
-      <button onClick={toggleTheme} className="border rounded-sm">
+      <button onClick={toggleTheme} className="border rounded-sm text-xl border-4">
         {dark ? "☀️" : "🌙"}
       </button>
     </motion.div>
