@@ -20,6 +20,8 @@ import {
   SiCss,
   SiVercel,
   SiRender,
+  SiLangchain,
+  SiLanggraph,
 } from "react-icons/si";
 
 // ✅ Type for SkillItem props
@@ -100,6 +102,14 @@ export default function Skills() {
             <div className="flex flex-wrap gap-4">
               <SkillItem Icon={SiMongodb} name="MongoDB" />
               <SkillItem Icon={SiMysql} name="MySQL" />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-3">Agentic AI</h3>
+            <div className="flex flex-wrap gap-4">
+              <SkillItem Icon={SiLangchain} name="LangChain" />
+              <SkillItem Icon={SiLanggraph} name="LangGraphql" />
             </div>
           </div>
 

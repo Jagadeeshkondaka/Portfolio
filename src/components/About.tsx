@@ -16,7 +16,7 @@ export default function About() {
       </div>
 
       {/* Main Grid */}
-      <div className="grid md:grid-cols-2  items-center">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT IMAGE */}
         <motion.img
@@ -54,7 +54,7 @@ export default function About() {
 
               <p className="text-xs text-gray-500 leading-5">
                 B.Tech in Artificial Intelligence and<br />
-                Machine Learning
+                Machine Learning - 2026
               </p>
 
             </div>

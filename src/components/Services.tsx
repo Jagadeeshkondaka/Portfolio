@@ -14,6 +14,10 @@ const services = [
     desc: "Developing complete web applications by integrating frontend and backend systems, delivering seamless and end-to-end solutions.",
   },
   {
+    title: "Agentic AI Development",
+    desc: "Implementing AI-driven solutions using LangChain and LangGraph to create intelligent applications that can learn and adapt.",
+  },
+  {
     title: "Databases",
     desc: "Working with databases like MongoDB and SQL to design efficient schemas, manage data, and optimize application performance.",
   },

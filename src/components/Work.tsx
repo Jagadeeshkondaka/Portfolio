@@ -3,38 +3,40 @@
 import { motion } from "framer-motion";
 import p1 from '../assets/project1.png'
 import p2 from '../assets/project2.png'
-import p4 from '../assets/project4.jpeg'
+import p4 from '../assets/project4.png'
 import p3 from '../assets/p3.png'
 
 const projects = [
   {
+    title: "AI-powered Resume Builder ",
+    desc: "This platform allows users to upload their existing resume, enhance it using AI, generate a modern ATS-friendly version, and share it instantly via a public link.",
+    img: p4,
+    live: "https://ai-ressume-builder-yfgf.vercel.app/",
+    github: "https://github.com/Jagadeeshkondaka/ResumeBuilder",
+  },
+
+  {
+    title: "Hire Flow – AI-Powered Online Job & Hiring Platform",
+    desc: "Hire Flow combines job management, AI-driven insights, automated coding assessments, and real-time support into one intelligent hiring ecosystem.",
+    img: p2,
+    live: "https://hire-flow-zeta.vercel.app/",
+    github: "https://github.com/Jagadeeshkondaka/Hire-Flow",
+  },
+  {
     title: "FlowTrack",
     desc: "A web application that helps users efficiently track, manage, and optimize their daily tasks and workflows.",
     img: p1,
-    live: "https://flowtrack-fawn.vercel.app/",
+    live: "https://live-demo.com",
     github: "https://github.com/Jagadeeshkondaka/Flowtrack",
-  },
-  {
-    title: "PrepAI",
-    desc: "An AI-powered platform designed to assist users in preparing for interviews through personalized questions and smart feedback.",
-    img: p2,
-    live: "https://prep-ai-morz-q65gb77u9-jagadeeshs-projects-d87bdb57.vercel.app/",
-    github: "https://github.com/Jagadeeshkondaka/PREP-AI",
   },
   {
     title: "DataVerse",
     desc: "A data-driven application that enables users to explore, visualize, and manage datasets with interactive insights.",
     img: p3,
-    live: "https://your-live-demo.com",
+    live: "https://live-demo.com",
     github: "https://github.com/Jagadeeshkondaka/Dataverse",
   },
-  {
-    title: "TravelNote",
-    desc: "Travel Note is a full-stack application that enables users to create, organize, and manage their travel experiences efficiently.",
-    img: p4,
-    live: "https://your-live-demo.com",
-    github: "https://github.com/Jagadeeshkondaka/Travel-Note",
-  },
+
 ];
 
 export default function Work() {
@@ -76,8 +78,6 @@ export default function Work() {
             {/* Buttons */}
             <div className="flex justify-between items-center mt-4">
 
-              {/* Live Demo Arrow */}
-              
 
               {/* Source Code */}
               <button
