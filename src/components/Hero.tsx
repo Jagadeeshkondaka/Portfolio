@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import profile from'../assets/profile.jpeg'
-import resume from "../assets/resume.pdf";
+import resume from "../assets/jagadeesh_resume.pdf";
 
 export default function Hero() {
   return (
